@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+#img {
+    background-image: url('./coding.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.8;
+}
+
+.nav1 {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    background-color: rgb(49, 44, 44);
+}
+
+.nav1 a {
+    color: white;
+}
+
+.welcome {
+    position: absolute;
+    top: 360px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#open span {
+    color: red;
+}
+
+#open h4 {
+    color: white;
+}
+
+#open {
+    width: 20%;
+    text-align: center;
+}
+
+.cv {
+    line-height: 1;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+    padding: 0.75em 1em;
+    padding-right: 1.25em;
+    color: #fff;
+    border: 1px solid transparent;
+    font-weight: 700;
+    border-radius: 2em;
+    font-size: 1rem;
+    margin-top: 20px;
+    box-shadow: 0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+    transition: transform 0.3s;
+
+    background: linear-gradient(90deg,
+            rgba(77, 54, 208, 1) 0%,
+            rgba(132, 116, 254, 1) 100%);
+}
+
+.button__icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.button:hover {
+    border-color: #f4f5f2;
+}
+
+.button:active {
+    transform: scale(0.98);
+    box-shadow: 0 0.5em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+}
+.dcv{
+    left: 200px;
+}
+#ame {
+    margin-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#aimg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#text {
+    width: 50%;
+}
+
+#aimg img {
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+#aimg p::before{
+    content: "";
+    width: 40%;
+    height: 90%;
+    position: absolute;
+    top: -50px;
+    left: 280px;
+    border: 5px solid red;
+    z-index: -1;
+}
+
+@media (max-width: 1120px) { 
+    #ame{
+        display: flex;
+        flex-wrap: wrap;
+        /* width: 100%; */
+        text-align: center;
+    }
+    .ulb{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: start;
+    }
+    #aimg{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    #text{
+        padding-top: 10px;
+        width: 100%;
+        
+    }
+    .tp{
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: justify;
+    }
+ }
+@media (max-width:576px) {
+    #img {
+        height: 150vh;
+    }
+}
